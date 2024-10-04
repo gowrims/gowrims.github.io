@@ -1,7 +1,7 @@
 .body{
     border: 1px solid black;
     background-color: bisque;
-    height: 100vh;
+    height: 98vh;
 }
 .head{
     border-bottom: 1px solid black;
@@ -32,9 +32,12 @@
 #language{
     padding: 6px;
     border-radius: 25px;
-    margin-left: 7px;
+    margin-left: 6px;
     border: 1px solid;
     cursor: pointer;
+    background-color: bisque;
+    height: fit-content;
+    margin-top: 19px;
 }
 #language:hover{
     background-color:yellow;

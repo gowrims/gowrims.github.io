@@ -1,7 +1,9 @@
-$(document).ready(function () {
+function mouseDown() {
+    document.getElementById("myname").textContent = "கௌரிசங்கர்";
+    document.getElementById("language").value = "ENGLISH"
+}
 
-    $('body').on('click', '#language', function () {
-        debugger;
-        let value = document.getElementsByClassName('name')
-    });
-});
+function mouseUp() {
+    document.getElementById("myname").textContent = "Gowri Shankar";
+    document.getElementById("language").value = "தமிழ்";
+}

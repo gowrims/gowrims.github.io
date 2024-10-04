@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    </head>
-    <body class="body">
-        <div class="head">
-            <div class="row">
-                <div class="page">Home</div>
-                <div class="page">Education</div>
-                <div class="page">Project</div>
-                <div class="page">Contacts</div>
-            </div>
+
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery/Jquery-3.7.1.js"></script>
+</head>
+
+<body class="body">
+    <div class="head">
+        <div class="row">
+            <div id="Home" class="page">Home</div>
+            <div class="page">Education</div>
+            <div class="page">Project</div>
+            <div class="page">Contacts</div>
         </div>
-        <div class="centerbody">
-            <div class="name"><h1>Gowri Shankar</h1><h6 id="language">தமிழ்</h6></div>
+    </div>
+    <div class="centerbody">
+        <div class="name">
+            <h1 id="myname">Gowri Shankar</h1>
+            <input id="language" type="button" value="தமிழ்" onmousedown="mouseDown()" onmouseup="mouseUp()"/>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
