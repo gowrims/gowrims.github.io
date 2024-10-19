@@ -42,3 +42,29 @@
 #language:hover{
     background-color:yellow;
 }
+.labels{
+    margin: 10px 20px 30px 40px;
+    font-size: 30px;
+}
+#left{
+    justify-content: end;
+    display: grid;
+}
+.headers{
+    border: 1px black solid;
+    padding: 14px;
+}
+.name{
+    padding: 5px;
+}
+form{
+    display: grid;
+    justify-content: center;
+    background-color: cyan;
+    width: 500px;
+    height: 500px;
+}
+.contactform{
+    display: flex;
+    justify-content: center;
+}
