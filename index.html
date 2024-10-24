@@ -5,8 +5,6 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="jquery/Jquery-3.7.1.js"></script>
 </head>
 
 <body class="body">
@@ -41,20 +39,18 @@
         <div class="headers">
             <label class="labels">Contact Us</label>
             <div class="contactform">
-                <form>
+                <form id="formid">
                     <div class="name">
-                        <input type="text" placeholder="Enter your name" />
+                        <input id="entername" type="text" placeholder="Enter your name" />
                     </div>
                     <div class="name">
                         <input type="email" placeholder="Enter email id" />
                     </div>
                     <div class="name">
-                        <div>
-                            <textarea></textarea>
-                        </div>
+                        <textarea></textarea>
                     </div>
-                    <div>
-                        <input type="button" value="Submit" />
+                    <div class="btn">
+                        <input class="btnstyle" type="button" value="Submit" onclick="SaveContact()"/>
                     </div>
                 </form>
             </div>
