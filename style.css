@@ -56,7 +56,9 @@
     padding: 14px;
 }
 .name{
-    padding: 5px;
+    padding: inherit;
+    height: 21px;
+    width: inherit;
 }
 #formid{
     display: grid;
