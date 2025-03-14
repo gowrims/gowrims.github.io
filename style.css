@@ -20,34 +20,65 @@ body {
 
 /* Header */
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 20px 0;
 }
 
-header h1 {
-    font-size: 2.5rem;
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-header p {
-    font-size: 1.2rem;
-    font-weight: 300;
+header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header .header-title {
+    text-align: center;
+}
+
+header .header-title h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header .header-title p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+header nav {
+    margin-top: 20px;
 }
 
 header nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 header nav ul li a {
-    text-decoration: none;
     color: #fff;
-    font-size: 1.1rem;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff6347;
 }
 
 /* Section Styles */
@@ -141,4 +172,78 @@ footer p {
     #skills ul {
         flex-direction: column;
     }
+}
+
+/* About Section */
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about .about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#about .about-image {
+    flex: 1;
+    text-align: center;
+}
+
+#about .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/your/background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+hero .header-title h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero .header-title p {
+    font-size: 1.5em;
+}
+
+/* About Section Enhancements */
+#about {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+#about .about-content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, #about, #skills, #projects, #contact, footer {
+    animation: fadeIn 1s ease-in-out;
 }
