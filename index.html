@@ -1,60 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John Doe - .NET Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gowri Shankar Marudhupandiyan</h1>
+            <p>.NET Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<body class="body">
-    <div class="head">
-        <div class="row">
-            <div id="Home" class="page">Home</div>
-            <div class="page">Education</div>
-            <div class="page">Experience</div>
-            <div class="page">Project</div>
-            <div class="page">Contact us</div>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm John Doe, a passionate .NET Developer with over 5 years of experience in building web and desktop applications using C#, ASP.NET, and other Microsoft technologies. I thrive in a collaborative environment and love solving complex problems.</p>
+            <p>Currently, I have been working with KMC Hospital for over 2+ years, where I focus on developing and maintaining various healthcare applications to improve patient care and streamline hospital management systems.</p>
         </div>
-    </div>
-    <div class="centerbody">
-        <div class="name">
-            <h1 id="myname">Gowri Shankar</h1>
-            <input id="language" type="button" value="தமிழ்" onmousedown="mouseDown()" onmouseup="mouseUp()" />
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>C#</li>
+                <li>ASP.NET Core</li>
+                <li>Entity Framework</li>
+                <li>SQL Server</li>
+                <li>JavaScript (React, Angular)</li>
+                <li>Git & GitHub</li>
+                <li>Azure DevOps</li>
+                <li>Unit Testing</li>
+            </ul>
         </div>
-    </div>
-    <div>
-        <div class="headers">
-            <label class="labels">Home</label>
-        </div>
-        <div class="headers">
-            <div id="left"><label class="labels">Education</label></div>
-        </div>
-        <div class="headers">
-            <label class="labels">Experience</label>
-        </div>
-        <div class="headers">
-            <div id="left"><label class="labels">Project</label></div>
-        </div>
-        <div class="headers">
-            <label class="labels">Contact Us</label>
-            <div class="contactform">
-                <form id="formid">
-                    <div class="name">
-                        <input class="name" id="entername" type="text" placeholder="Enter your name" required/>
-                    </div>
-                    <div class="name">
-                        <input class="name" type="email" placeholder="Enter email id" required/>
-                    </div>
-                    <div class="name">
-                        <textarea class="name"></textarea>
-                    </div>
-                    <div class="btn">
-                        <input class="btnstyle" type="button" value="Submit" onclick="SaveContact()"/>
-                    </div>
-                </form>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: E-commerce Platform</h3>
+                <p>A fully featured e-commerce website built with ASP.NET Core, Entity Framework, and SQL Server.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Task Management App</h3>
+                <p>A task management app built with React and ASP.NET Core backend for efficient task tracking.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: Blogging Platform</h3>
+                <p>A blogging platform where users can create, edit, and manage blog posts. Built with ASP.NET MVC and Entity Framework.</p>
+                <a href="#">View Project</a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch or learn more about my work, feel free to reach out!</p>
+            <ul>
+                <li>Email: gowrishankar130496@gmail.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/gowri-shankar-m/" target="_blank">gowri-shankar-m</a></li>
+                <li>GitHub: <a href="https://github.com/gowrims" target="_blank">github.com/gowrims</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
