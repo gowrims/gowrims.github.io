@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gowrishankar - .NET Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -34,8 +36,8 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hello! I'm Gowrishankar, a passionate .NET Developer with over 2+ years of experience in building web and desktop applications using C#, ASP.NET, and other Microsoft technologies. I thrive in a collaborative environment and love solving complex problems.</p>
-                    <p>Currently, I have been working with KMC Hospital for over 2+ years, where I focus on developing and maintaining various healthcare applications to improve patient care and streamline hospital management systems.</p>
+                    <p>Hello! I'm Gowrishankar, a passionate .NET Developer with over <span class="year"></span> of experience in building web and desktop applications using C#, ASP.NET, and other Microsoft technologies. I thrive in a collaborative environment and love solving complex problems.</p>
+                    <p>Currently, I have been working with KMC Hospital for over <span class="year"></span> , where I focus on developing and maintaining various healthcare applications to improve patient care and streamline hospital management systems.</p>
                 </div>
                 <div class="about-image">
                     <img src="https://github.com/gowrims/gowrims.github.io/blob/master/Gowri.jpg?raw=true" alt="Gowrishankar">
@@ -52,7 +54,7 @@
                 <li>ASP.NET Core</li>
                 <li>Entity Framework</li>
                 <li>SQL Server & Oracle</li>
-                <li>Html & Css & JavaScript</li>
+                <li>Html & Css & JavaScript & Jquery</li>
                 <li>Git & GitHub</li>
             </ul>
         </div>
@@ -61,9 +63,9 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project">
+                <div class="project">
                 <h3>Project 1: Digital Medical Record</h3>
-                <div class="Description">
+                <div class="description">
                     <p>Developed a secure digital system for maintaining individual health records with cloud backups.</p>
                     <p> Enabled better understanding and timely care for patients through digital records.</p>   
                 </div>                
@@ -71,8 +73,9 @@
                 <a href="#">View Project</a>
             </div>
             <div class="project">
-                <h3>Project 2: Task Management App</h3>
-                <p>A task management app built with React and ASP.NET Core backend for efficient task tracking.</p>
+                <h3>Project 2: Kauvery Kare Mobile Application</h3>
+                <p>In the mobile application I develp all backend api's. The token api for getting authorization for all other api's and get the doctor 
+                    list and doctor spality and patient appoinment booking api. Using asp.net and oracle database it's testing all i used postman tool. </p>
                 <a href="#">View Project</a>
             </div>
             <div class="project">
@@ -80,6 +83,17 @@
                 <p>A blogging platform where users can create, edit, and manage blog posts. Built with ASP.NET MVC and Entity Framework.</p>
                 <a href="#">View Project</a>
             </div>
+        </div>
+    </section>
+
+    <section id="github" data-github-username="gowrims">
+        <div class="container">
+            <h2>GitHub Repositories</h2>
+            <p style="text-align:center;">Latest public repositories from my GitHub profile.</p>
+            <div id="github-repos">
+                <!-- Repos will be loaded here by script.js -->
+            </div>
+            <p style="text-align:center;margin-top:12px;"><a href="https://github.com/gowrims" target="_blank">View full GitHub profile</a></p>
         </div>
     </section>
 
