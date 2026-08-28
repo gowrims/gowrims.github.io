@@ -1,4 +1,5 @@
 $(function () {
+	$("#current-year").text(new Date().getFullYear());
 	const inputDateStr = "09-JUL-2022";
 
 	function parseDateDDMMMYYYY(s) {
