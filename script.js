@@ -1,6 +1,6 @@
 $(function () {
 	$("#current-year").text(new Date().getFullYear());
-	const inputDateStr = "09-JUL-2022";
+	const inputDateStr = "09-JUN-2022";
 
 	function parseDateDDMMMYYYY(s) {
 		if (!s || typeof s !== 'string') return new Date(NaN);
