@@ -243,13 +243,17 @@ section {
 
 .about-content {
     align-items: center;
-    display: grid;
-    gap: 110px;
-    grid-template-columns: 1.15fr .85fr;
+    display: flex;
+    justify-content: center;
 }
 
 .about-text {
-    max-width: 560px;
+    max-width: 760px;
+    width: min(100%, 760px);
+}
+
+.about-heading {
+    margin: 0 auto;
 }
 
 .about-text .eyebrow,
